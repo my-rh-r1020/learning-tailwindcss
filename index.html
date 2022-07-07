@@ -8,21 +8,63 @@
     <!-- Tailwind CSS Script -->
     <link rel="stylesheet" href="public/style.css" />
 
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
     <title>Belajar Tailwind CSS</title>
 
-    <style>
+    <!-- <style>
       * {
         border: 1px solid royalblue;
       }
-    </style>
+    </style> -->
   </head>
   <body>
-    <h2 class="text-3xl text-center mb-7">Tailwind CSS - Utilities Part 1</h2>
+    <h2 class="text-4xl font-bold text-center mb-7 bg-gradient-to-r from-cyan-500 via-green-600 to-blue-500 bg-clip-text text-transparent">Tailwind CSS - Utilities Part 1</h2>
+
+    <section class="mb-10">
+      <div>
+        <h3 class="font-bold py-2">1. Spacing Pada Tailwind CSS</h3>
+        <p class="m-4">Margin</p>
+        <p class="p-4">Padding</p>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <div>
+        <h3 class="font-bold py-2">2. Sizing Pada Tailwind CSS</h3>
+        <p class="w-16">Width</p>
+        <p class="h-16">Height</p>
+      </div>
+    </section>
 
     <section>
       <div>
-        <h3 class="font-bold">Spacing Section</h3>
-        <p class="m-4">Margin</p>
+        <h3 class="font-bold py-2 font-montserrat text-lg">3. Typography Pada Tailwind CSS</h3>
+        <div class="mb-4">
+          - Font Family
+          <p class="font-poppins">
+            Lorem ipsum dolor sit, amet consectetur <a href="#" class="hover:font-bold hover:italic">adipisicing elit</a>. Facilis saepe soluta cumque odio cupiditate similique corrupti vero dignissimos dolore ipsum.
+          </p>
+        </div>
+        <div class="mb-4">
+          - Font Sizing
+          <p class="font-poppins text-sm text-amber-800 hover:text-amber-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, amet eius perspiciatis obcaecati adipisci iusto reiciendis quia quaerat quibusdam. Corporis nesciunt laboriosam enim autem nobis officia voluptate. Dignissimos,
+            sit velit!
+          </p>
+        </div>
+        <div class="mb-4">
+          - Color & Background Color
+          <p class="font-poppins bg-neonGreen">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, architecto aut, enim maxime velit rem molestias quisquam, placeat reprehenderit tenetur
+            <text class="hover:font-bold hover:bg-red-300">hic quo illum!</text> Quaerat recusandae fugiat autem velit? Neque nobis eligendi hic repellendus fugiat blanditiis, laboriosam sit natus provident ut?
+          </p>
+        </div>
+        <div class="mb-4">
+          - Gradient Color
+          <p class="bg-gradient-to-r from-cyan-500 to-blue-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, autem.</p>
+        </div>
       </div>
     </section>
   </body>
