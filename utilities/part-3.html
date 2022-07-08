@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Tailwind CSS Script -->
+    <!-- Tailwind CSS -->
     <link rel="stylesheet" href="../public/style.css" />
+
+    <style type="text/tailwindcss">
+      #toggle:checked ~ label div.toggle-circle {
+        @apply translate-x-3;
+      }
+    </style>
 
     <!-- Font Google -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -16,19 +22,21 @@
   <body class="dark:bg-slate-800 dark:text-slate-100">
     <h2 class="text-4xl font-bold text-center mb-7 bg-gradient-to-r from-cyan-500 via-green-600 to-blue-500 bg-clip-text text-transparent">Tailwind CSS - Utilities Part 3</h2>
 
+    <!-- Dark Mode Toggle -->
     <section class="mb-10">
       <div class="flex justify-center">
-        <span class="text-sm text-slate-100 mr-2">Light</span>
-        <input type="checkbox" class="hidden" id="toogle" />
-        <label for="toogle">
-          <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-0.5">
-            <div class="w-4 h-4 bg-white rounded-full"></div>
+        <span class="text-sm dark:text-slate-100 mr-2">Light</span>
+        <input type="checkbox" id="toggle" class="hidden" />
+        <label for="toggle">
+          <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-0.5 cursor-pointer">
+            <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
           </div>
         </label>
-        <span class="text-sm text-slate-100 ml-2">Dark</span>
+        <span class="text-sm dark:text-slate-100 ml-2">Dark</span>
       </div>
     </section>
 
+    <!-- Pseudo Class -->
     <section class="mb-10">
       <p class="text-center mb-2 font-bold">Pseudo Class</p>
       <button class="px-4 py-2 dark:bg-sky-900 dark:hover:bg-sky-600 bg-sky-400 text-white rounded-full block mx-auto font-semibold hover:bg-blue-500 active:bg-blue-600 focus:ring focus:ring-blue-900">Save</button>
@@ -65,5 +73,15 @@
       <a href="part-2.html" class="p-2 rounded-md bg-blue-400 hover:bg-blue-700 hover:text-white">2</a>
       <text class="p-2 rounded-md bg-slate-500 text-white">3</text>
     </div>
+
+    <!-- JS Dark Mode -->
+    <script>
+      const checkbox = document.querySelector("#toggle"),
+        html = document.querySelector("html");
+
+      checkbox.addEventListener("click", function () {
+        checkbox.checked ? html.classList.add("dark") : html.classList.remove("dark");
+      });
+    </script>
   </body>
 </html>
