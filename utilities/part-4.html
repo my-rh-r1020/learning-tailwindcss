@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../public/style.css" />
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <title>Belajar Tailwind CSS</title>
+  </head>
+  <body>
+    <h2 class="text-4xl font-bold text-center mb-7 bg-gradient-to-r from-cyan-500 via-green-600 to-blue-500 bg-clip-text text-transparent">Tailwind CSS - Utilities Part 4</h2>
+
+    <section>
+      <!-- Transform -->
+      <div class="w-40 h-40 mx-auto bg-sky-300 rounded-lg shadow-lg hover:scale-75 hover:rotate-180 hover:bg-neonGreen transition origin-top-right"></div>
+
+      <!-- Transition -->
+      <div class="w-40 h-40 bg-green-500 mx-auto mt-20 group">
+        <div class="w-full h-full bg-sky-300 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000"></div>
+      </div>
+
+      <!-- Animation -->
+      <div class="w-40 h-40 mt-20 mx-auto bg-neonGreen rounded-lg shadow-lg animate-goyang"></div>
+    </section>
+
+    <!-- Pages -->
+    <div class="my-8 text-center">
+      <a href="../index.html" class="p-2 rounded-md bg-blue-400 hover:bg-blue-700 hover:text-white">1</a>
+      <a href="part-2.html" class="p-2 rounded-md bg-blue-400 hover:bg-blue-700 hover:text-white">2</a>
+      <a href="part-3.html" class="p-2 rounded-md bg-blue-400 hover:bg-blue-700 hover:text-white">3</a>
+      <text class="p-2 rounded-md bg-slate-500 text-white">4</text>
+    </div>
+  </body>
+</html>
