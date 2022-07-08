@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS Script -->
+    <link rel="stylesheet" href="../public/style.css" />
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <title>Belajar Tailwind CSS</title>
+  </head>
+  <body class="dark:bg-slate-800 dark:text-slate-100">
+    <h2 class="text-4xl font-bold text-center mb-7 bg-gradient-to-r from-cyan-500 via-green-600 to-blue-500 bg-clip-text text-transparent">Tailwind CSS - Utilities Part 3</h2>
+
+    <section class="mb-10">
+      <div class="flex justify-center">
+        <span class="text-sm text-slate-100 mr-2">Light</span>
+        <input type="checkbox" class="hidden" id="toogle" />
+        <label for="toogle">
+          <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-0.5">
+            <div class="w-4 h-4 bg-white rounded-full"></div>
+          </div>
+        </label>
+        <span class="text-sm text-slate-100 ml-2">Dark</span>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <p class="text-center mb-2 font-bold">Pseudo Class</p>
+      <button class="px-4 py-2 dark:bg-sky-900 dark:hover:bg-sky-600 bg-sky-400 text-white rounded-full block mx-auto font-semibold hover:bg-blue-500 active:bg-blue-600 focus:ring focus:ring-blue-900">Save</button>
+
+      <!-- Pseudo Class : Group Hover, Selection -->
+      <div class="max-w-lg p-5 my-5 mx-auto border-slate-300 rounded-xl shadow-md font-poppins hover:bg-blue-400 dark:hover:bg-sky-900 group">
+        <h5 class="font-bold text-lg text-slate-600 mb-3 group-hover:text-white">My Card</h5>
+        <p class="text-justify text-slate-500 group-hover:text-white selection:bg-amber-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus illo explicabo eveniet error necessitatibus tempore illum iusto sed nihil ratione aliquid rem tenetur, vero iure deserunt quae! Facilis quis optio soluta tempora
+          rerum culpa, nostrum ad quae. Nesciunt blanditiis aperiam fuga quidem, tempora necessitatibus beatae corrupti reiciendis laboriosam delectus! Quod?
+        </p>
+      </div>
+
+      <!-- Pseudo Class : Form Input -->
+      <div class="max-w-lg p-5 my-5 mx-auto border-slate-300 rounded-xl shadow-md font-poppins">
+        <form action="#">
+          <label for="email">
+            <span class="text-sm dark:text-slate-100 text-slate-600 block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Email</span>
+            <input
+              type="email"
+              id="email"
+              placeholder="Masukkan email anda"
+              class="block peer px-3 py-2 w-full text-sm border rounded-md shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:border-green-500 invalid:text-red-700 invalid:focus:ring-red-500 invalid:focus:border-red-500"
+            />
+            <p class="text-red-500 text-sm invisible peer-invalid:visible">Bukan Email!</p>
+          </label>
+        </form>
+      </div>
+    </section>
+
+    <!-- Pages -->
+    <div class="text-center">
+      <a href="../index.html" class="p-2 rounded-md bg-blue-400 hover:bg-blue-700 hover:text-white">1</a>
+      <a href="part-2.html" class="p-2 rounded-md bg-blue-400 hover:bg-blue-700 hover:text-white">2</a>
+      <text class="p-2 rounded-md bg-slate-500 text-white">3</text>
+    </div>
+  </body>
+</html>
