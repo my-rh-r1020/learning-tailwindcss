@@ -596,40 +596,20 @@ video {
   visibility: hidden;
 }
 
-.absolute {
-  position: absolute;
+.fixed {
+  position: fixed;
 }
 
 .relative {
   position: relative;
 }
 
-.top-0 {
-  top: 0px;
+.bottom-5 {
+  bottom: 1.25rem;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.-top-10 {
-  top: -2.5rem;
-}
-
-.-top-1 {
-  top: -0.25rem;
-}
-
-.-right-10 {
-  right: -2.5rem;
-}
-
-.-top-5 {
-  top: -1.25rem;
-}
-
-.-right-5 {
-  right: -1.25rem;
+.right-5 {
+  right: 1.25rem;
 }
 
 .float-left {
@@ -739,10 +719,6 @@ video {
   height: 2.5rem;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .w-16 {
   width: 4rem;
 }
@@ -765,10 +741,6 @@ video {
 
 .w-10 {
   width: 2.5rem;
-}
-
-.w-20 {
-  width: 5rem;
 }
 
 .max-w-xl {
@@ -816,6 +788,11 @@ video {
   cursor: pointer;
 }
 
+.columns-3 {
+  -moz-columns: 3;
+       columns: 3;
+}
+
 .items-center {
   align-items: center;
 }
@@ -826,6 +803,10 @@ video {
 
 .overflow-y-scroll {
   overflow-y: scroll;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-md {
@@ -946,8 +927,8 @@ video {
   padding: 1.75rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
+.p-10 {
+  padding: 2.5rem;
 }
 
 .py-2 {
@@ -1004,16 +985,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold {
