@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../public/style.css" />
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <title>Belajar Tailwind CSS</title>
+  </head>
+  <body>
+    <h2 class="text-4xl font-bold text-center mb-7 bg-gradient-to-r from-cyan-500 via-green-600 to-blue-500 bg-clip-text text-transparent">Tailwind CSS - Utilities Part 8</h2>
+
+    <h4 class="text-lg text-slate-400 font-semibold font-poppins text-center">CASE STUDY : GRID SYSTEM</h4>
+
+    <!-- Button Scroll Up -->
+    <div class="w-10 h-10 bg-red-300 rounded-full flex fixed bottom-5 right-5 cursor-pointer"><a href="#" class="text-xl m-auto">🔝</a></div>
+
+    <!-- Studi Kasus : Grid -->
+    <div class="mt-16 p-2 font-poppins grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
+      <h2 class="h-15 text-xl text-slate-600 font-semibold md:col-start-4 md:row-start-2 md:flex"><span class="self-center">Welcome in Tanjungpinang</span></h2>
+      <div class="h-15 text-base text-slate-500 md:col-start-2 md:row-start-2 md:flex"><span class="self-end">Powered by RH</span></div>
+
+      <div class="h-15 aspect-[4/3] rounded-lg bg-emerald-400 md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden group hover:scale-95 transition duration-700 relative">
+        <div class="w-full h-full bg-[url('../img/1.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition duration-700 cursor-pointer"></div>
+      </div>
+
+      <div class="h-15 aspect-[4/3] rounded-lg bg-emerald-400 md:aspect-[3/4] md:col-start-3 lg:aspect-[4/3] overflow-hidden group hover:scale-95 transition duration-700 relative">
+        <div class="w-full h-full bg-[url('../img/2.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition duration-700 cursor-pointer"></div>
+      </div>
+
+      <div class="h-15 aspect-[4/3] rounded-lg bg-emerald-400 md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden group hover:scale-95 transition duration-700 relative">
+        <div class="w-full h-full bg-[url('../img/3.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition duration-700 cursor-pointer"></div>
+      </div>
+
+      <div class="h-15 aspect-[4/3] rounded-lg bg-emerald-400 md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden group hover:scale-95 transition duration-700 relative">
+        <div class="w-full h-full bg-[url('../img/1.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition duration-700 cursor-pointer"></div>
+      </div>
+
+      <div class="h-15 aspect-[4/3] rounded-lg bg-emerald-400 md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden group hover:scale-95 transition duration-700 relative">
+        <div class="w-full h-full bg-[url('../img/2.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition duration-700 cursor-pointer"></div>
+      </div>
+
+      <div class="h-15 aspect-[4/3] rounded-lg bg-emerald-400 md:aspect-[3/4] md:col-start-2 lg:aspect-[4/3] overflow-hidden group hover:scale-95 transition duration-700 relative">
+        <div class="w-full h-full bg-[url('../img/3.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition duration-700 cursor-pointer"></div>
+      </div>
+
+      <div class="h-15 aspect-[4/3] rounded-lg bg-emerald-400 md:aspect-[3/4] md:col-start-4 lg:aspect-[4/3] overflow-hidden group hover:scale-95 transition duration-700 relative">
+        <div class="w-full h-full bg-[url('../img/1.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition duration-700 cursor-pointer"></div>
+      </div>
+
+      <div class="h-15 aspect-[4/3] rounded-lg bg-emerald-400 md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden group hover:scale-95 transition duration-700 relative">
+        <div class="w-full h-full bg-[url('../img/2.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition duration-700 cursor-pointer"></div>
+      </div>
+
+      <div class="h-15 aspect-[4/3] rounded-lg bg-emerald-400 md:aspect-[3/4] md:col-start-3 lg:aspect-[4/3] overflow-hidden group hover:scale-95 transition duration-700 relative">
+        <div class="w-full h-full bg-[url('../img/3.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition duration-700 cursor-pointer"></div>
+      </div>
+
+      <div class="h-15 aspect-[4/3] rounded-lg bg-emerald-400 md:aspect-[3/4] md:col-start-3 lg:aspect-[4/3] overflow-hidden group hover:scale-95 transition duration-700 relative">
+        <div class="w-full h-full bg-[url('../img/1.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition duration-700 cursor-pointer"></div>
+      </div>
+    </div>
+
+    <!-- Pages -->
+    <div class="my-8 text-center">
+      <a href="../index.html" class="p-2 rounded-md bg-blue-400 hover:bg-blue-700 hover:text-white">1</a>
+      <a href="part-2.html" class="p-2 rounded-md bg-blue-400 hover:bg-blue-700 hover:text-white">2</a>
+      <a href="part-3.html" class="p-2 rounded-md bg-blue-400 hover:bg-blue-700 hover:text-white">3</a>
+      <a href="part-4.html" class="p-2 rounded-md bg-blue-400 hover:bg-blue-700 hover:text-white">4</a>
+      <a href="part-5.html" class="p-2 rounded-md bg-blue-400 hover:bg-blue-700 hover:text-white">5</a>
+      <a href="part-6.html" class="p-2 rounded-md bg-blue-400 hover:bg-blue-700 hover:text-white">6</a>
+      <text class="p-2 rounded-md bg-slate-500 text-white">7</text>
+    </div>
+  </body>
+</html>
