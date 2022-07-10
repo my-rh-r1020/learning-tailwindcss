@@ -1,3 +1,20 @@
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
+
+@layer components {
+  .grid-card {
+    @apply aspect-[4/3] rounded-lg bg-emerald-400 md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden hover:scale-95 transition duration-700 relative;
+  }
+  .grid-image-card {
+    @apply w-full h-full bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition duration-700 cursor-pointer;
+  }
+}
+
+@layer utilities {
+  #toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-3;
+  }
+}
